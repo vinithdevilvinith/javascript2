@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "product": "Mobile",
+    "price": 15000,
+    "stock": true
+  },
+  {
+    "id": 2,
+    "product": "Laptop",
+    "price": 55000,
+    "stock": false
+  },
+  {
+    "id": 3,
+    "product": "Headset",
+    "price": 2000,
+    "stock": true
+  }
+]

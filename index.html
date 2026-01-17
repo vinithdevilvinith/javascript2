@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div{
+            padding: 30px;
+            margin: 10px;
+            border: 4px solid #333;
+            text-align: center;
+        } 
+          #modal{
+            position: fixed;
+            width: 100%;
+            height:100%;
+            background-color:rgba(0,0,0,0.5) ;
+            top:0;
+            left:0;
+            display:none;
+            align-items:center;
+            justify-content: center;
+
+         }
+         #modalContent {
+            background-color:white;
+            padding: 20px;
+            border-radius: 5px;
+         }
+          #modalContent h2{
+            font-weight:600;
+          } 
+
+           *{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          body{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+          }
+          .container{
+            width:650px;
+            background-color: #333;
+            padding: 10px;
+          }
+          h3{
+            font-weight: 300;
+            font-size: 25px;
+            margin: 10px 5px;
+            color:#fff;
+            text-align: center;
+          }
+          #catagories{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            background-color: green;
+          }
+          .product{
+            width:150px;
+            height: 150px;
+            background-color: yellowgreen;
+            line-height:150px ;
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 400;
+            cursor:pointer;
+          } 
+          
+           *{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          body{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: aliceblue;
+          }
+          #frm{
+              width:650px;
+              background-color: #fff;
+              padding: 10px;
+              display: flex;
+              flex-direction: column;
+              gap:10px;
+
+          }
+          .form-group{
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 10px;
+          }
+          .form-group lable{
+            margin-bottom: 5px;
+          }
+          .form-group input{
+            border:1px solid #ccc;
+            padding: 5px 10px;
+            border-radius: 3px;
+            outline: none;
+          }
+            
+    </style>
+</head>
+<body>
+    <!-- <h3>Event bubbling and Event Capturing</h3>
+    <div id="grandparent"> Grandparent
+       <div id="parent"> Parent
+            <div id="child">Child</div>
+       </div>
+    </div> -->
+
+    <!--------------------------------------------------------->
+
+    <!-- <button id="btnModal">Open Modal</button>
+    <div id="modal">
+        <div id="modalContent ">
+            <h2>Modal Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia, eveniet earum libero quidem quod!</p>
+            <input type="text" id="txtName" placeholder="name">
+            <button id="btnSumbit">submit</button>
+        </div>
+    </div> -->
+
+    <!-------------------------------------------------------------->
+    <!-- <div class="container">
+      <h3>Event Delegation in javascript</h3>
+      <div id="catagories">
+        <div class="product" id="Laptops">Laptops</div>
+        <div class="product" id="camera">Camera</div>
+        <div class="product" id="printer">Printer</div>
+        <div class="product" id="tv">TV</div>
+        <div class="product" id="ac">AC</div>
+        <div class="product" id="mobiles">Mobiles</div>
+      </div>
+    </div> 
+
+     <form action="#" id="frm">
+      <div class="form-group">
+        <lable for="firstName">First Name</lable>
+        <input type="text" placeholder="Enter First Name" data-uppercase>
+      </div>
+
+       <div class="form-group">
+        <lable for="lastName">Last Name</lable>
+        <input type="text" placeholder="Enter last Name" data-uppercase>
+      </div>
+    </form>  -->
+
+    <!------------------------------------------------------------------>
+    <h2>Debouncing in javascript</h2>
+    <input type="text" id="txtInput"/>
+
+    <script src="index.js"></script>
+  <!-- <script>
+  const btnModal = document.querySelector("#btnModal");
+const modal = document.querySelector("#modal");
+const modalContent = document.querySelector("#modalContent");
+const btnSumbit = document.querySelector("#btnSumbit");
+const txtName=document.querySelector("#txtName")
+
+btnModal.addEventListener("click", function () {
+  modal.style.display = "flex";
+});
+
+// background click → close
+modal.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+
+
+btnSumbit.addEventListener("click", function (e) {
+      e.stopPropagation();
+  console.log("submit button pressed");
+ 
+});
+
+txtName.addEventListener("click", function (e) {
+     e.stopPropagation();
+  console.log("Input clicked");
+  
+});
+ </script> -->
+</body>
+</html>
